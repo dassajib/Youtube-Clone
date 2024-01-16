@@ -6,7 +6,13 @@ const SearchBar = () => {
   return (
     <Paper
       component="form"
-      sx={{ borderRadius: 20, border: "1px solid #e3e3e3", boxShadow: "none", padding: "0 10px" }}
+      sx={{
+        borderRadius: 20,
+        border: "1px solid #e3e3e3",
+        boxShadow: "none",
+        pl: 2,
+        mr: { sm: 5 },
+      }}
     >
       <input
         placeholder="Search..."
