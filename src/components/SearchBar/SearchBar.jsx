@@ -16,7 +16,11 @@ const SearchBar = () => {
     >
       <input
         placeholder="Search..."
-        style={{ border: "none", width: "350px", outline: "none" }}
+        style={{
+          width: {xs: "100px", md: "350px"},
+          border: "none",
+          outline: "none",
+        }}
       />
       <IconButton type="submit" sx={{ p: "10px", color: "red" }}>
         <Search />
