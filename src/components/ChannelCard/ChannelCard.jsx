@@ -8,7 +8,7 @@ import {
 } from "../../utils/constants";
 import { CheckCircle } from "@mui/icons-material";
 
-const ChannelCard = ({ item }) => {
+const ChannelCard = ({ item, marginTop }) => {
   return (
     <Box
       sx={{
@@ -18,6 +18,7 @@ const ChannelCard = ({ item }) => {
         boxShadow: "none",
         borderRadius: "20px",
         width: { xs: "356px", md: "320px" },
+        marginTop
       }}
     >
       <Link

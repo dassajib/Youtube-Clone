@@ -15,7 +15,7 @@ const Feed = () => {
   }, [selectedCategory]);
 
   return (
-    <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
+    <Stack sx={{ flexDirection: { sx: "column", md: "row" }, overflowY: "hidden" }}>
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
@@ -29,13 +29,21 @@ const Feed = () => {
         />
         <Typography
           variant="body2"
-          sx={{ display: { xs: "none", md: "block" }, color: "white", marginTop: 4 }}
+          sx={{
+            display: { xs: "none", md: "block" },
+            color: "white",
+            marginTop: 4,
+          }}
         >
           Copyright reserved
         </Typography>
       </Box>
-      <Box directtion="row" p={2} flex={2}>
-        <Typography variant="h4" sx={{ color: "white", fontWeight: "bold" }}>
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+        <Typography
+          variant="h4"
+          fontWeight="bold"
+          sx={{ color: "white", fontWeight: "bold" }}
+        >
           {selectedCategory} <span style={{ color: "red" }}>Videos</span>
         </Typography>
         <Videos videos={videos} />

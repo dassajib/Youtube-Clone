@@ -15,11 +15,7 @@ const Index = () => {
         <Routes>
           <Route path="/" exact element={<Feed />} />
           <Route path="/video/:id" exact element={<VideoDetails />} />
-          <Route
-            path="/channel/:channelId"
-            exact
-            element={<ChannelDetails />}
-          />
+          <Route path="/channel/:id" exact element={<ChannelDetails />} />
           <Route path="/search/:searchterm" exact element={<SearchFeed />} />
         </Routes>
       </Box>
